@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "author": "Vignesh Ravindran",
+  "name": "cc-crx",
+  "version": "0.1.0",
+  "description": "adds c++ type labels for the given constraints in a cc problem",
+  "icons": { "16": "icon16.png", "48": "icon48.png", "128": "icon128.png" },
+  "content_scripts": [
+    {
+      "js": ["content.js"],
+      "matches": [
+        "https://www.codechef.com/problems/*",
+        "https://www.codechef.com/*/problems/*"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
